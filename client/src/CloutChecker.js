@@ -260,6 +260,8 @@ export class CloutChecker extends React.Component {
     return (
       <Container>
         <h1 className="mt-3">Clout Checker</h1>
+        <h5>View a crypto's returns since a tweet.</h5>
+        <br></br>
         <Row>
           <Col md>
             <TweetForm updateDate={this.updateDate}></TweetForm>
@@ -276,7 +278,7 @@ export class CloutChecker extends React.Component {
         <Row>
           <Col>
             <br></br>
-            <p>* Pricing data is sourced from <a href="https://www.coingecko.com/en">CoinGecko</a>. The top 250 coins by market cap are available in this app.</p>
+            <p style={{fontSize: "14px"}}>* Pricing data is sourced from <a href="https://www.coingecko.com/en">CoinGecko</a>. The top 250 coins by market cap are available in this app.</p>
           </Col>
         </Row>
       </Container>
