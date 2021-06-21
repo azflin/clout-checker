@@ -278,7 +278,10 @@ export class CloutChecker extends React.Component {
         <Row>
           <Col>
             <br></br>
-            <p style={{fontSize: "14px"}}>* Pricing data is sourced from <a href="https://www.coingecko.com/en">CoinGecko</a>. The top 250 coins by market cap are available in this app.</p>
+            <p style={{fontSize: "14px"}}>
+              * Pricing data is sourced from <a href="https://www.coingecko.com/en">CoinGecko</a>. The top 250 coins by market cap are available in this app.<br></br>
+              * Check out the source code <a href="https://github.com/azflin/clout-checker">here!</a>
+            </p>
           </Col>
         </Row>
       </Container>
