@@ -43,7 +43,7 @@ class TweetForm extends React.Component {
   }
 
   onTweetLoad() {
-    fetch(`/tweet/${this.state.tweetId}`)
+    fetch(`/api/tweet/${this.state.tweetId}`)
       .then(response => response.json())
       .then(json => {
         this.setState({status: null});
@@ -173,7 +173,7 @@ export class CloutChecker extends React.Component {
   getCoinReturn(e) {
     e.preventDefault();
     this.setState({coinReturnStats: 'loading'});
-    fetch(`/coinPerformance/${this.state.coin}/${this.state.date}`)
+    fetch(`/api/coinPerformance/${this.state.coin}/${this.state.date}`)
       .then(response => response.json())
       .then(json => {
         this.setState({
